@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    background-color: wheat;
+    text-decoration: none;
+    color: #FFAE00;
+    height: 100px;
+    
+}
