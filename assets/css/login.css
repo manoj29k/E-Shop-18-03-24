@@ -1,0 +1,46 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+#container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 100px auto;
+   border:  2px solid #000;
+   width: 500px;
+   height: 600px;
+   box-shadow: 0  0 0 0px rgba(0, 0, 0, 0.5);
+}
+
+.login-page h3{
+   margin-top: 80px;
+
+}
+
+
+.login-email{
+
+   margin-top: 100px;
+
+}
+
+h3{
+   margin-top: 80px;
+}
+
+.links-reseaux{
+margin-top: 80px;}
+
+
+.login-page h3{
+   margin: 20px;
+   font-size: 1.5rem;
+}
+
+.links-reseaux a{
+   margin-left: 30px;
+}
