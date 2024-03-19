@@ -1,13 +1,16 @@
-/* * {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
   background-image: url("https://i.pinimg.com/originals/6e/f6/2f/6ef62fb86557cbbaa0cdcdd2a11bfd7e.gif");
   background-size: cover;
   background-position: center;
@@ -15,30 +18,31 @@ body {
 }
 
 .header {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 4%;
-  background-color: orangered;
-  height: 40px;
+  /* background-color: transparent ; */
+  background-color: beige;
+  background-image: linear-gradient(to right, lightblue, purple);
+  height: 90px;
   cursor: pointer;
+  flex-wrap: wrap;
+  padding-right: 50px;
 }
 
-#logo {
-  width: 100px;
+.logo {
+  width: 90px;
 }
 
-.header nav {
-  display: flex;
-  align-items: center;
-  gap: 80px;
-}
 
-.header nav a {
+a{
   text-decoration: none;
   color: #fff;
   font-size: 1.3rem;
   font-weight: 700;
+  display: flex;
+  
 }
 
 .container {
@@ -49,27 +53,58 @@ body {
   align-items: center;
 }
 
-.button {
-  display: inline-block;
-  background-color: black;
-  color: orangered;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
-}
 
 p {
-  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
   font-size: 16px;
   color: #fffdfd;
   text-align: center;
-  background-color: black;
+  background-color: transparent;
+  width: 400px;
+  padding: 1em;
+  font-weight: 700;
 }
 
 h1 {
-  width: 30%;
-  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  background-color: transparent;
   font-size: 20px;
-  color: orangered;
+  color: rgb(9, 237, 169);
+  padding: 1em;
+  font-weight: 1000;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  text-align: center;
+  padding: 0.1em;
+  border-radius: 5px;
+}
+
+.login:hover{
+  color: rgb(0, 0, 0);
+  /* text-decoration: underline; */
+
+}
+
+.products{
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  text-align: center;
+  padding: 0.1em;
+  border-radius: 5px
+}
+
+.products:hover{
+  color: rgb(0, 0, 0);
+  /* text-decoration: underline; */
 }
