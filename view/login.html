@@ -4,26 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/E-shop-18-03-24/assets/css/login.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
     <title>Login|E-shop</title>
     
 </head>
 <body>
+    <header class="header">
+
+        <!-- <a href="" class="logo">E-shop</a> -->
+        <a href="/index.html"><img src="/assets/img/marque.jpg" alt="" class="logo"></a>
+        <nav class="navbar">
+            <a href="/view/login.html">Login</a>
+            <a href="/view/produit.html">Proucts</a>
+            <!-- <a href="/E-shop-18-03-24/view/produit.html"></a> -->
+            <!-- <a href=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> -->
+            </a>
+        </nav>
+    </header>
     <main>
         <section id="container">
             <div class="login-page">
-                <h1>Login</h1>
                 <h3>Conexion / Inscription</h3>
                 <p>Saisir votre email pour vous connecter ou créer un compte</p>
             </div>
     
             <form action="">
                 <div class="login-email">
-                    <label for="email">Email</label>
+                    <label for="email">Email :</label>
                     <input type="email" id="email" class="input-email">  
                 </div>
-    
-                <h3>ou</h3>
+                <div class="login-pwd">
+                    <label for="pwd">Mot de pase</label>
+                    <input type="pwd" id="login-pwd" class="input-pwd">
+                </div>
+
+                <input type="submit" value="Envoyer">
+                <h3 class=choice>ou</h3>
                 <div class="links-reseaux">
                     <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>

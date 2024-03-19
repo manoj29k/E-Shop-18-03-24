@@ -4,43 +4,113 @@
    box-sizing: border-box;
 }
 
-#container{
+.header{
    display: flex;
-   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 4%;
+   /* background-color: #666; */
+   background-color: orangered;
+   height: 50px;
+}
+
+.header .logo{
+   width: 50px;
+   height: 54px;
+   border:  1px solid #000;
+   color: #fff;
+   text-decoration: none;
+   /* font-size: 1.5rem; */
+   box-shadow: 4px 8px 12 rgba(0, 0, 0, 0.56);
+}
+
+.header nav{
+   display: flex;
+   align-items: center;
+   gap: 80px;
+
+}
+
+.header nav a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 1.2rem;
+   font-weight: 700;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+main {
+   display: flex;
    justify-content: center;
    align-items: center;
-   margin: 100px auto;
-   border:  2px solid #000;
-   width: 500px;
-   height: 600px;
-   box-shadow: 0  0 0 0px rgba(0, 0, 0, 0.5);
+   height: 100vh;
+}
+
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   /* background-color: #f0f2f5; */
+   background-color: #412178;
+}
+
+#container {
+   width: 90%;
+   max-width: 400px;
+   padding: 20px;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.login-page h3, .login-page p {
+   text-align: center;
 }
 
 .login-page h3{
-   margin-top: 80px;
-
+   margin-bottom: 20px;
+}
+.input-email, .input-pwd {
+   width: 100%;
+   padding: 10px;
+   margin: 10px 0;
+   border-radius: 5px;
+   border: 1px solid #ccc;
 }
 
-
-.login-email{
-
-   margin-top: 100px;
-
+.submit-btn {
+   width: 100%;
+   padding: 10px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
 }
 
-h3{
-   margin-top: 80px;
+.choice{
+   text-align: center;
 }
 
-.links-reseaux{
-margin-top: 80px;}
-
-
-.login-page h3{
-   margin: 20px;
-   font-size: 1.5rem;
+.links-reseaux {
+   text-align: center;
+   margin-top: 20px;
 }
 
-.links-reseaux a{
-   margin-left: 30px;
+.links-reseaux a {
+   margin: 0 10px;
+   color: #50596b;
+   font-size: 24px;
+}
+
+.fa-facebook:hover, .fa-youtube-play:hover, .fa-twitter:hover {
+   color: #007bff;
 }
