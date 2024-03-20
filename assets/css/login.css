@@ -12,10 +12,10 @@
    justify-content: space-between;
    align-items: center;
    padding: 20px 4%;
-   /* background-color: #666;
-   background-color: orangered; */
    background-image: linear-gradient(to right, lightblue, purple);
    height: 50px;
+   position: fixed;
+   width: 100%;
 }
 
 .header .logo{
@@ -63,19 +63,16 @@ main {
    justify-content: center;
    align-items: center;
    height: 100vh;
-   background-color: rgb(250, 95, 85);
    background-image: url("https://i.pinimg.com/originals/6e/f6/2f/6ef62fb86557cbbaa0cdcdd2a11bfd7e.gif");
    background-size: cover;
    background-position: center;
-   text-align: center;
-   
 }
 
 #container {
    width: 90%;
    max-width: 400px;
    padding: 20px;
-   background-color: white;
+   background-color:lightblue;
    border-radius: 10px;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -88,6 +85,9 @@ main {
 .login-page h3{
    margin-bottom: 20px;
 
+}
+h3{
+   font-size: larger;
 }
 .login-page{
    margin-bottom: 20px;
@@ -103,11 +103,13 @@ main {
 .submit-btn {
    width: 100%;
    padding: 10px;
-   background-color: #007bff;
+   background-image: linear-gradient(to right,  #0069d9, purple);
    color: white;
    border: none;
    border-radius: 5px;
    cursor: pointer;
+   margin-bottom: 20px;
+   margin-top: 10px;
 }
 
 .choice{
@@ -127,4 +129,12 @@ main {
 
 .fa-facebook:hover, .fa-youtube-play:hover, .fa-twitter:hover {
    color: #007bff;
+}
+
+.submit-btn:hover {
+   background-color: #0069d9; 
+   color: white;
+   font-size: 15px;
+   background-image: linear-gradient(to top,  #0069d9, purple);
+   
 }
