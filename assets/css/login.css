@@ -203,3 +203,8 @@ label {
    background-image: transparent;
    
 }
+
+.fa-sign-out:hover{
+   color: rgb(0, 0, 0);
+   transition: all ease-in 300ms;
+}
