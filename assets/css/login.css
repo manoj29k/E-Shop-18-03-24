@@ -198,3 +198,8 @@ label {
 #container {
    opacity: 0.8;
 }
+
+.fa-sign-out{
+   background-image: transparent;
+   
+}
