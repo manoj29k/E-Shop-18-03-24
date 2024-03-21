@@ -10,11 +10,13 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
+  height: 100vh;
   font-style: normal;
   background-image: url("https://i.pinimg.com/originals/6e/f6/2f/6ef62fb86557cbbaa0cdcdd2a11bfd7e.gif");
   background-size: cover;
   background-position: center;
   text-align: center;
+  
 }
 
 .header {
@@ -22,18 +24,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: transparent ; */
   background-color: beige;
   background-image: linear-gradient(to right, lightblue, purple);
   height: 90px;
   cursor: pointer;
-  flex-wrap: wrap;
   padding-right: 50px;
 }
 
 .logo {
-  width: 90px;
-  margin-left: 6px;
+  width: 75px;
+  margin-left: 7px;
+  margin-top: 7px;
 }
 
 
@@ -42,7 +43,6 @@ a{
   color: #fff;
   font-size: 1.3rem;
   font-weight: 700;
-  display: flex;
   
 }
 
@@ -111,11 +111,9 @@ h1 {
 }
 
 .logo:hover{
-  width: 75px;
-  height: 78px;
-  border:  1px solid #000;
-  color: #fff;
-  text-decoration: none;
+  width: 65px;
+  height: 68px;
   border-radius: 8px;
-  margin-top: 6px;
+  transition: all ease-in-out 200ms;
+  
 }
