@@ -12,5 +12,12 @@
         "firstname":"nano",
         "lastname":"nano"
 
-    }
+    },
+
+    {
+        "loggedIn": true
+      }
+
+   
+
 ]

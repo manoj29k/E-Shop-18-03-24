@@ -45,13 +45,25 @@
             </form>
         </section>
     </main>
+    
+    <button id="logout-button">Déconnexion</button>
 
     <script type="module">
-        // cela dit que je vais potentiellement importé des fichiers entre ces
-        // balises (fichiers .js)
+    
         import { AuthService } from "/src/services/auth.service.js"
         import { submitCallback } from "/src/handlers/submitHandler.js"
-  
+
+        document.getElementById("logout-button").addEventListener("click", async () => {
+    try {
+       
+        await AuthService.logout();
+
+        window.location.href = "/index.html"; 
+    } catch (error) {
+        console.error("Erreur lors de la déconnexion :", error);
+    }
+});
+
         window.addEventListener("DOMContentLoaded", () => {
           // je déclare une variable form et stocke en elle l'élément HTML de type form
           
@@ -61,6 +73,7 @@
           form.addEventListener("submit", submitCallback);
         });
       </script>
+      
 </body>
 </html>
 
