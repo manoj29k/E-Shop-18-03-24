@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/login.css">
     <title>Login|E-shop</title>
     
@@ -16,7 +15,7 @@
         <nav class="navbar">
             <a href="/index.html" class="home">Acceuil</a>
             <a href="/view/produit.html" class="products">Proucts</a>
-            <a id="logout-button"><i class="fa fa-sign-out"></i></a>
+            </a>
         </nav>
     </header>
     <main>
@@ -24,9 +23,8 @@
             <div class="login-page">
                 <h3>Connexion</h3>
                 <p>Saisir  votre  Email  et  Mot  de  passe</p>
-            </div>
     
-            <form class="login-form" id="login-form">
+            <form action="" class="login-form" id="login-form">
                 <div class="login-email">
                     <label for="email">Email :</label>
                     <input type="email" id="email" class="input-email" placeholder="Entrer votre Email">  
@@ -46,25 +44,13 @@
             </form>
         </section>
     </main>
-    
-    
 
     <script type="module">
-    
+        // cela dit que je vais potentiellement importé des fichiers entre ces
+        // balises (fichiers .js)
         import { AuthService } from "/src/services/auth.service.js"
         import { submitCallback } from "/src/handlers/submitHandler.js"
-
-        document.getElementById("logout-button").addEventListener("click", async () => {
-    try {
-       
-        await AuthService.logout();
-
-        window.location.href = "/index.html"; 
-    } catch (error) {
-        console.error("Erreur lors de la déconnexion :", error);
-    }
-});
-
+  
         window.addEventListener("DOMContentLoaded", () => {
           // je déclare une variable form et stocke en elle l'élément HTML de type form
           
@@ -74,7 +60,6 @@
           form.addEventListener("submit", submitCallback);
         });
       </script>
-      
 </body>
 </html>
 
