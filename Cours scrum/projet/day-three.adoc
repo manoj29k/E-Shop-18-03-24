@@ -1,0 +1,21 @@
+= Sprint 3
+
+== Spécifications fonctionnelles 
+* Une page login où l'utilisateur peut se connecter à sa session
+* Persistence des données du côté du navigateur pour que l'utilisateur n'ait pas à se connecter à chaque rechargement de la page
+* Une possibilité de se déconnecter qui doit entraîner l'effacement des données du navigateur
+
+=== Architecture logicielle
+* Architecture modulaire 
+* Diviser le code en parties avec différentes logiques 
+* N-Layer
+
+== Spécifications technologiques
+* html 
+* css
+* javascript 
+
+== Accessibilité et Responsive Web Design
+* HTML + CSS + JS
+* Accessible
+* Responsive 
