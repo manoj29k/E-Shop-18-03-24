@@ -1,0 +1,16 @@
+= Sprint 1
+
+== Spécifications fonctionnelles 
+* Une landing page sur laquelle l'utilisateur va pouvoir naviguers vers les pages products et login. 
+* Un message de bienvenue précédant un bouton: Entrer ou Venir Découvir nos produits 
+
+
+== Spécifications technologiques
+* html 
+* css
+* javascript 
+
+== Accessibilité et Responsive Web Design
+* HTML + CSS + JS
+* Accessible
+* Responsive 
